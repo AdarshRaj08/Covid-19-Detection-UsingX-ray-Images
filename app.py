@@ -1,5 +1,5 @@
 import streamlit as st
-import tensorflow as tf
+import tensorflow
 import numpy as np
 from PIL import Image
 
@@ -9,7 +9,7 @@ st.markdown("---")
 
 # Load the trained model
 def load_model():
-    model = tf.keras.models.load_model("my_model.h5")
+    model = tensorflow.keras.models.load_model("my_model.h5")
     return model
 
 model = load_model()
